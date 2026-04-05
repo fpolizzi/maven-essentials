@@ -90,3 +90,41 @@ For more information have a look at [Maven in 5 Minutes](https://maven.apache.or
 
 The target folder is the default output directory for Maven projects. It contains the compiled classes, generated documentation, and other build artifacts. 
 Maven uses this folder to store the results of the build process.
+
+## Maven Repository
+
+Maven repository is a storage location for Maven dependencies. It is a central repository where Maven can find and download dependencies for your project.
+
+[Maven Central Repository](https://mvnrepository.com/)
+
+Maven Central Repository is the default repository for Maven dependencies. It is a public repository maintained by the Maven project. 
+You can find a wide range of dependencies here, including popular libraries like Apache Commons, Guava, and Jackson.
+
+## Installing Maven Dependency
+
+To install a Maven dependency, you need to add the dependency information to your **pom.xml file**. Maven will then automatically 
+download the specified dependency from the central repository and include it in your project.
+
+Here are the steps to install a Maven dependency:
+- **Open the pom.xml file:** This file is located in the root directory of your Maven project. 
+- **Add the dependency information:** Inside the **<dependencies>** section of the **pom.xml** file, add the dependency information. 
+- The dependency information includes the group ID, artifact ID, and version of the library you want to include.
+
+Here is an example of how to add a dependency for the Java Faker library:
+
+```xml
+    <dependency>
+        <groupId>net.datafaker</groupId>
+        <artifactId>datafaker</artifactId>
+        <version>2.5.4</version>
+    </dependency>
+```
+
+- **Save the pom.xml file:** After adding the dependency information, save the **pom.xml** file.
+- **Run the Maven build:** Open a terminal or command prompt, navigate to the root directory 
+of your Maven project, and run the following command to build your project:
+
+```bash
+    mvn clean install
+```
+This command will download the Datafaker library and include it in your project.

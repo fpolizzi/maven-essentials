@@ -220,3 +220,29 @@ Here is a table of some commonly used Maven commands:
 
 
 These commands can be run from the command line in the root directory of your Maven project.
+
+## Packaging And Jar Files
+
+Maven uses the concept of "packaging" to describe how a project is built and distributed. The most common packaging type 
+is the JAR (Java Archive) file, which is used to distribute Java libraries and applications.
+
+### Packaging Types
+
+Maven supports several packaging types, including:
+
+- **JAR:** A Java Archive file, used for distributing Java libraries and applications.
+- **WAR:** A Web Application Archive file, used for distributing web applications.
+- **EAR:** An Enterprise Archive file, used for distributing enterprise applications.
+- **POM:** A Project Object Model file, used for managing Maven projects.
+- **Maven-Plugin:** A Maven Plugin file, used for distributing Maven plugins.
+
+### Creating a JAR File
+
+To create a JAR file, you need to add the packaging type to your **pom.xml** file. Here is an example of how to 
+add the packaging type for a Maven project:
+
+```xml
+    <project>
+        <packaging>jar</packaging>
+    </project>
+```

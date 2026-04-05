@@ -195,3 +195,28 @@ with other developers and projects.
 - **site:** Generate the project's site documentation.
 - **post-site:** Execute processes needed to finalize the site generation.
 - **site-deploy:** Deploy the generated site documentation to the specified web server.
+
+## Maven Commands
+
+Maven provides a variety of commands to manage the build lifecycle, dependencies, and plugins. 
+Here is a table of some commonly used Maven commands:
+
+| Command                         | Description                                                                   |
+|---------------------------------|-------------------------------------------------------------------------------|
+| **mvn clean**                   | Cleans the project by deleting the **target** directory.                      |
+| **mvn compile**                 | Compiles the source code of the project.                                      |
+| **mvn test**                    | Runs the tests using a suitable unit testing framework.                       |
+| **mvn package**                 | Packages the compiled code into a distributable format, such as a JAR.        |
+| **mvn install*                  | Installs the package into the local repository for use as a dependency.       |
+| **mvn deploy**                  | Deploys the final package to a remote repository for sharing.                 |
+| **mvn validate**                | Validates the project is correct and all necessary information is available.  |
+| **mvn verify**                  | Runs any checks to verify the package is valid and meets quality criteria.    |
+| **mvn site**                    | Generates the project's site documentation.                                   |
+| **mvn clean install**           | Cleans the project and then installs the package into the local repository.   |
+| **mvn dependency:resolve**      | Resolves all project dependencies.                                            |
+| **mvn help:describe**           | Describes the attributes of a plugin.                                         |
+| **mvn help:effective-pom**      | Displays the effective POM for the current build.                             |
+| **mvn help:effective-settings** | Displays the effective settings for the current build.                        |
+
+
+These commands can be run from the command line in the root directory of your Maven project.
